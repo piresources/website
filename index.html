@@ -16,16 +16,13 @@
 	<body>
 		<marquee behavior="scroll" direction="left">Welcome to Pi Resources developed by York Pi Jam. <b>For teachers and jam creators</b></marquee>
 		<div class="header">
-		<h1>Pi-Resources</h1>
+		<h1><centre>Pi-Resources</centre></h1>
 		<img src="https://image.ibb.co/gZyDmG/Logomakr_9s20_EB.png">
-		<div class="wrap">
-   		<div class="search">
-      		<input type="text" class="searchTerm" placeholder="What are you looking for?">
-      		<button type="submit" class="searchButton">
-       		 <i class="fa fa-search"></i>
-     		</button>
-   		</div>
-		</div>
+		<div id=”cse” style=”width:100%;”>Loading</div>
+		<script src=”http://www.google.com/jsapi” type=”text/javascript”></script>
+		<script type=”text/javascript”>google.load(‘search’, ‘1’);
+          	google.setOnLoadCallback(function(){var cse = new google.search.
+          	CustomSearchControl();cse.draw(‘cse’);}, true);</script>
 		<p>All of our resources are free. Donate a small amount with PayPal to keep our Jams and this site continuing. Thanks.</p>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 		<input type="hidden" name="cmd" value="_s-xclick">
