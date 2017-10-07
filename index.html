@@ -18,11 +18,18 @@
 		<div class="header">
 		<h1><centre>Pi-Resources</centre></h1>
 		<img src="https://image.ibb.co/gZyDmG/Logomakr_9s20_EB.png">
-		<div id=”cse” style=”width:100%;”>Loading</div>
-		<script src=”http://www.google.com/jsapi” type=”text/javascript”></script>
-		<script type=”text/javascript”>google.load(‘search’, ‘1’);
-          	google.setOnLoadCallback(function(){var cse = new google.search.
-          	CustomSearchControl();cse.draw(‘cse’);}, true);</script>
+		<script>
+  		(function() {
+   		var cx = '001548081309029766594:uzp8cqgyoig';
+    		var gcse = document.createElement('script');
+   		gcse.type = 'text/javascript';
+    		gcse.async = true;
+    		gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    		var s = document.getElementsByTagName('script')[0];
+    		s.parentNode.insertBefore(gcse, s);
+  		})();
+		</script>
+		<gcse:search></gcse:search>
 		<p>All of our resources are free. Donate a small amount with PayPal to keep our Jams and this site continuing. Thanks.</p>
 		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 		<input type="hidden" name="cmd" value="_s-xclick">
